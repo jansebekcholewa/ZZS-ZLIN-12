@@ -44,7 +44,7 @@ const Stats: React.FC = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-16 bg-zzs-red text-white">
+    <section id="stats" ref={sectionRef} className="py-16 bg-zzs-red text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
           {STATS.map((stat) => (

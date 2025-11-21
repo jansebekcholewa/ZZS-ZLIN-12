@@ -18,10 +18,10 @@ function App() {
         <Hero />
         <WhyUs />
         <Team />
-        <Values />
-        <Stats />
         <Jobs />
         <Benefits />
+        <Values />
+        <Stats />
         <Contact />
       </main>
       <Footer />

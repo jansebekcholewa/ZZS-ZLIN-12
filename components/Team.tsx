@@ -1,18 +1,18 @@
 import React from 'react';
-import { Quote } from 'lucide-react';
+import { Quote, ArrowRight } from 'lucide-react';
 import { TESTIMONIALS } from '../constants';
 
 const Team: React.FC = () => {
   return (
     <section id="team" className="py-20 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-16">
+        <div className="mb-16 text-center md:text-left">
           <span className="text-zzs-red font-bold tracking-wider uppercase text-sm">Náš tým</span>
           <h2 className="text-3xl md:text-4xl font-bold text-zzs-dark mt-2">Lidé, kteří tvoří ZZS Zlín</h2>
           <p className="text-xl text-gray-500 mt-4 font-light">Není to jen práce. Je to poslání.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {TESTIMONIALS.map((person) => (
             <div key={person.id} className="group relative">
               {/* Image container */}
@@ -36,6 +36,16 @@ const Team: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center">
+          <a 
+            href="#jobs" 
+            className="inline-flex items-center px-8 py-4 bg-zzs-dark text-white text-lg font-bold rounded-lg shadow-lg hover:bg-gray-800 transition-all transform hover:-translate-y-1"
+          >
+            Přidej se k nám
+            <ArrowRight className="ml-2 h-5 w-5 text-zzs-orange" />
+          </a>
         </div>
       </div>
     </section>
