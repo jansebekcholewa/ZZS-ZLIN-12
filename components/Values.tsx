@@ -3,7 +3,7 @@ import { CheckCircle } from 'lucide-react';
 
 const Values: React.FC = () => {
   return (
-    <section id="values" className="py-20 bg-zzs-dark text-white relative overflow-hidden">
+    <section id="values" className="py-20 bg-zzs-dark text-white relative overflow-hidden scroll-mt-28">
        {/* Decorative background elements */}
        <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-zzs-red rounded-full opacity-10 blur-3xl"></div>
        <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-80 h-80 bg-zzs-orange rounded-full opacity-5 blur-3xl"></div>

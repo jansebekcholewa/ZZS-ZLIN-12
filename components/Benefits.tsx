@@ -15,7 +15,7 @@ const iconMap: { [key: string]: any } = {
 
 const Benefits: React.FC = () => {
   return (
-    <section id="benefits" className="py-20 bg-white">
+    <section id="benefits" className="py-20 bg-white scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-zzs-dark">Co od nás dostanete?</h2>

@@ -4,7 +4,7 @@ import { TESTIMONIALS } from '../constants';
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="py-20 bg-white overflow-hidden">
+    <section id="team" className="py-20 bg-white overflow-hidden scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 text-center md:text-left">
           <span className="text-zzs-red font-bold tracking-wider uppercase text-sm">Náš tým</span>

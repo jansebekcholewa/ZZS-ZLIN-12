@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
         <div className="max-w-2xl animate-fade-in-up">
           <div className="inline-block px-3 py-1 mb-4 border border-zzs-orange/50 rounded-full bg-zzs-orange/10 backdrop-blur-sm">
             <span className="text-zzs-orange font-semibold text-sm tracking-wide uppercase">People First</span>

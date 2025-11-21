@@ -1,42 +1,48 @@
 import React from 'react';
 import { Heart, Zap, GraduationCap, Wallet, Users, MapPin } from 'lucide-react';
 
-const reasons = [
-  {
-    icon: <Heart className="h-8 w-8 text-zzs-red" />,
-    title: "People First",
-    desc: "U nás nejste číslo. Vaše well-being, rozvoj a work-life balance jsou naše priorita."
-  },
-  {
-    icon: <Zap className="h-8 w-8 text-zzs-orange" />,
-    title: "Modernizace",
-    desc: "Pracujte s nejnovějším vybavením. Digitalizace, telemetrie, elektronická dokumentace."
-  },
-  {
-    icon: <GraduationCap className="h-8 w-8 text-blue-500" />,
-    title: "Rozvoj & Kariéra",
-    desc: "Zlínská záchranná akademie, mentoring, kariérní růst. Investujeme do vašeho vzdělávání."
-  },
-  {
-    icon: <Wallet className="h-8 w-8 text-green-600" />,
-    title: "Férové ohodnocení",
-    desc: "Konkurenceschopné mzdy, benefity, příspěvky na stravenky, penzijní pojištění."
-  },
-  {
-    icon: <Users className="h-8 w-8 text-purple-500" />,
-    title: "Tým & Podpora",
-    desc: "Vstupujete do rodiny profesionálů. Psychosociální podpora, otevřené dveře vedení."
-  },
-  {
-    icon: <MapPin className="h-8 w-8 text-red-500" />,
-    title: "Zlínský kraj",
-    desc: "Žijte a pracujte v krásném regionu s tradicí, kulturou a skvělou komunitou."
-  }
-];
-
 const WhyUs: React.FC = () => {
+  const reasons = [
+    {
+      icon: Heart,
+      colorClass: "text-zzs-red",
+      title: "People First",
+      desc: "U nás nejste číslo. Vaše well-being, rozvoj a work-life balance jsou naše priorita."
+    },
+    {
+      icon: Zap,
+      colorClass: "text-zzs-orange",
+      title: "Modernizace",
+      desc: "Pracujte s nejnovějším vybavením. Digitalizace, telemetrie, elektronická dokumentace."
+    },
+    {
+      icon: GraduationCap,
+      colorClass: "text-blue-500",
+      title: "Rozvoj & Kariéra",
+      desc: "Zlínská záchranná akademie, mentoring, kariérní růst. Investujeme do vašeho vzdělávání."
+    },
+    {
+      icon: Wallet,
+      colorClass: "text-green-600",
+      title: "Férové ohodnocení",
+      desc: "Konkurenceschopné mzdy, benefity, příspěvky na stravenky, penzijní pojištění."
+    },
+    {
+      icon: Users,
+      colorClass: "text-purple-500",
+      title: "Tým & Podpora",
+      desc: "Vstupujete do rodiny profesionálů. Psychosociální podpora, otevřené dveře vedení."
+    },
+    {
+      icon: MapPin,
+      colorClass: "text-red-500",
+      title: "Zlínský kraj",
+      desc: "Žijte a pracujte v krásném regionu s tradicí, kulturou a skvělou komunitou."
+    }
+  ];
+
   return (
-    <section id="why-us" className="py-20 bg-gray-50">
+    <section id="why-us" className="py-20 bg-gray-50 scroll-mt-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-zzs-dark mb-4">Proč pracovat pro ZZS Zlínského kraje?</h2>
@@ -50,7 +56,7 @@ const WhyUs: React.FC = () => {
               className="bg-white p-8 rounded-xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-zzs-red/20 group"
             >
               <div className="bg-gray-50 w-16 h-16 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                {reason.icon}
+                <reason.icon className={`h-8 w-8 ${reason.colorClass}`} />
               </div>
               <h3 className="text-xl font-bold text-zzs-dark mb-3 group-hover:text-zzs-red transition-colors">
                 {reason.title}
