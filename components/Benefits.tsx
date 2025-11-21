@@ -1,9 +1,10 @@
 import React from 'react';
-import { Banknote, Utensils, GraduationCap, HeartPulse, Palmtree, Ambulance, LucideIcon, ArrowRight } from 'lucide-react';
+import { Banknote, Utensils, GraduationCap, HeartPulse, Palmtree, Ambulance, ArrowRight } from 'lucide-react';
 import { BENEFITS_DATA } from '../constants';
 
 // Map icon names to components
-const iconMap: { [key: string]: LucideIcon } = {
+// Using 'any' here to avoid importing LucideIcon type which can fail in some browser runtime environments
+const iconMap: { [key: string]: any } = {
   Banknote,
   Utensils,
   GraduationCap,
